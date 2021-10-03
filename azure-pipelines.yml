@@ -21,7 +21,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 - task: CmdLine@2
-inputs:
+  inputs:
       script: |
           javac add.java
           java add
